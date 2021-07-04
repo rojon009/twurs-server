@@ -3,21 +3,26 @@ const router = express.Router();
 const User = require('../db/models/User.model');
 const auth = require('../middleware/auth')
 
-//Login a user
-router.post('/login', async (req,res)=>{
-    const user = new User(req.body);
+
+
+//User Login
+router.post('/login', async (req, res) => {
     try {
-        await user.save();
+        const user = await User.findByCredentials(req.body.email, req.body.password );
+        if(!user) {
+            res.send("NOT FOUND");
+        }
+
         const token = await user.generateAuthToken();
-        res.status(200).send({user,token})
+
+        res.status(200).send({user,token});
     } catch (error) {
-        res.send(error)
+        res.send(error);
     }
 })
 
-
 //Create a user
-router.post('/', async (req, res) => {
+router.post('/new', async (req, res) => {
     const user = new User(req.body);
     try {
         await user.save();
@@ -37,23 +42,6 @@ router.get('/me', auth, (req, res)=>{
     }
 })
 
-//User Login
-router.post('/login', async (req,res)=>{
-    try {
-        const user = await User.findByCredentials(req.body.email, req.body.password);
-        console.log(user)
-        if(!user) {
-            res.send("NOT FOUND");
-        }
-
-        const token = await user.generateAuthToken();
-
-        res.status(200).send({user,token});
-    } catch (error) {
-        res.send(error);
-    }
-})
-
 
 //User Logout
 router.post('/logout',auth, async (req,res)=>{
@@ -63,6 +51,17 @@ router.post('/logout',auth, async (req,res)=>{
         res.send(user);
     } catch (error) {
         res.status(500).send(error)
+    }
+})
+
+//User Logout from All sessions
+router.post('/logoutAll',auth, async (req,res)=>{
+    try {
+        req.user.tokens = [];
+        const user = await req.user.save();
+        res.send(user);
+    } catch (error) {
+        res.status(500).send(error);
     }
 })
 
