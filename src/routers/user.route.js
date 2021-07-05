@@ -66,7 +66,6 @@ router.post('/logoutAll',auth, async (req,res)=>{
 })
 
 
-
 //Get All users for testing
 router.get("/all", async ( req, res ) => {
     try {

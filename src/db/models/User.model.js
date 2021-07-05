@@ -32,12 +32,6 @@ const userSchema = new mongoose.Schema({
         //     }
         // }
     },
-    orders: [{
-        product: {
-            type: mongoose.Types.ObjectId,
-            ref: 'Product'
-        }
-    }],
     tokens: [{
         token:{
             type: String,
@@ -94,6 +88,5 @@ userSchema.pre('save', async function (next) {
 
 
 
-const User = mongoose.model('User',userSchema)
-
-module.exports = User;
+const User = new mongoose.model('User',userSchema);
+module.exports = User

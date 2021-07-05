@@ -12,6 +12,7 @@ router.post('/', (req,res)=>{
     }
 })
 
+//Get All Categories
 router.get('/', async (req,res)=>{
     try {
         const categories = await Category.find({});
@@ -21,11 +22,14 @@ router.get('/', async (req,res)=>{
     }
 })
 
+//Get Single Category
 router.get('/:id',async (req,res) => {
     const {id} = req.params;
     try {
         const category = await Category.find({_id: id});
-        await category.populate('products').exec();
+        await category.populate({
+            path: 'products'
+        }).execPopulate();
         res.send(category)
     } catch (error) {
         res.send(error)
