@@ -3,81 +3,81 @@
         "name": "A Thousand Splendid Suns Paperback",
         "price": 10,
         "quantity": 46,
-        "category": "60e15b84e0f8253cc8fd6887",
+        "category": "60ead0ba0a89c311dc48fb6a",
         "description": "Newspaper print",
-        "imgUrl": "https://i.ibb.co/qjYCJxy/A-Thousand-Splendid-Suns-Paperback.jpg",
+        "imgUrl": "https://i.ibb.co/qjYCJxy/A-Thousand-Splendid-Suns-Paperback.jpg"
     },
     {
         "name": "Sapiens - A brief history of man kind",
         "price": 11,
         "quantity": 57,
-        "category": "60e15b84e0f8253cc8fd6887",
+        "category": "60ead0ba0a89c311dc48fb6a",
         "description": "Standard paper print",
-        "imgUrl": "https://i.ibb.co/y4SPfSM/Sapiens-A-brief-history-of-man-kind.jpg",
+        "imgUrl": "https://i.ibb.co/y4SPfSM/Sapiens-A-brief-history-of-man-kind.jpg"
     },
     {
         "name": "The Alchemist Paperback",
         "price": 17,
         "quantity": 44,
-        "category": "60e15b84e0f8253cc8fd6887",
+        "category": "60ead0ba0a89c311dc48fb6a",
         "description": "Low paper budget print",
-        "imgUrl": "https://i.ibb.co/bWYNN9Y/The-Alchemist-Paperback.jpg",
+        "imgUrl": "https://i.ibb.co/bWYNN9Y/The-Alchemist-Paperback.jpg"
     },
     {
         "name": "The Art of War Paperback",
         "price": 15,
         "quantity": 29,
-        "category": "60e15b84e0f8253cc8fd6887",
+        "category": "60ead0ba0a89c311dc48fb6a",
         "description": "Newspaper print",
-        "imgUrl": "https://i.ibb.co/nj4YyXf/The-Art-of-War-Paperback.jpg",
+        "imgUrl": "https://i.ibb.co/nj4YyXf/The-Art-of-War-Paperback.jpg"
     },
     {
         "name": "The Kite Runner Paperback",
         "price": 22,
         "quantity": 33,
-        "category": "60e15b84e0f8253cc8fd6887",
+        "category": "60ead0ba0a89c311dc48fb6a",
         "description": "Stander paper print",
-        "imgUrl": "https://i.ibb.co/mNpk4H7/The-Kite-Runner-Paperback.jpg",
+        "imgUrl": "https://i.ibb.co/mNpk4H7/The-Kite-Runner-Paperback.jpg"
     },
     {
         "name": "Max Curve Slimming Coffee",
         "price": 5,
         "quantity": 60,
-        "category": "60e15b8ae0f8253cc8fd6889",
+        "category": "60ead0c00a89c311dc48fb6c",
         "description": "well grinded and smooth",
-        "imgUrl": "https://i.ibb.co/6WG2bBG/Max-Curve-Slimming-Coffee.jpg",
+        "imgUrl": "https://i.ibb.co/6WG2bBG/Max-Curve-Slimming-Coffee.jpg"
     },
     {
         "name": "NESTLE COFFEE MATE Coffee Creamer Jar 400g",
         "price": 2,
         "quantity": 20,
-        "category": "60e15b8ae0f8253cc8fd6889",
+        "category": "60ead0c00a89c311dc48fb6c",
         "description": "Nice smelling coffee you would love",
-        "imgUrl": "https://i.ibb.co/2MhyCXv/NESTLE-COFFEE-MATE-Coffee-Creamer-Jar-400g.jpg",
+        "imgUrl": "https://i.ibb.co/2MhyCXv/NESTLE-COFFEE-MATE-Coffee-Creamer-Jar-400g.jpg"
     },
     {
         "name": "NESTLE NESCAFE Creamy Latte Coffee Mix Sachet 18g",
         "price": 3,
         "quantity": 18,
-        "category": "60e15b8ae0f8253cc8fd6889",
+        "category": "60ead0c00a89c311dc48fb6c",
         "description": "Well packed long lasted",
-        "imgUrl": "https://i.ibb.co/cYh3Kyr/NESTLE-NESCAFE-Creamy-Latte-Coffee-Mix-Sachet-18g.jpg",
+        "imgUrl": "https://i.ibb.co/cYh3Kyr/NESTLE-NESCAFE-Creamy-Latte-Coffee-Mix-Sachet-18g.jpg"
     },
     {
         "name": "Rigs 3in1 Instant Coffee Premix",
         "price": 4,
         "quantity": 65,
-        "category": "60e15b8ae0f8253cc8fd6889",
+        "category": "60ead0c00a89c311dc48fb6c",
         "description": "Best instant coffee ever",
-        "imgUrl": "https://i.ibb.co/6XhDs9s/Rigs-3in1-Instant-Coffee-Premix.jpg",
+        "imgUrl": "https://i.ibb.co/6XhDs9s/Rigs-3in1-Instant-Coffee-Premix.jpg"
     },
     {
         "name": "Rigs Agglo Instant Coffee 200 gm",
         "price": 12,
         "quantity": 38,
-        "category": "60e15b8ae0f8253cc8fd6889",
+        "category": "60ead0c00a89c311dc48fb6c",
         "description": "200 gm coffee of rigs agglo",
-        "imgUrl": "https://i.ibb.co/jyd0P72/Rigs-Agglo-Instant-Coffee-200-gm.jpg",
+        "imgUrl": "https://i.ibb.co/jyd0P72/Rigs-Agglo-Instant-Coffee-200-gm.jpg"
     },
     {
         "name": "Logitech K380 Wireless Multi-Device Keyboard for Windows",
@@ -85,7 +85,7 @@
         "quantity": 32,
         "category": "60e15b7ce0f8253cc8fd6885",
         "description": "102 key full keyboard portable",
-        "imgUrl": "https://i.ibb.co/wckrqJy/Logitech-K380-Wireless-Multi-Device-Keyboard-for-Windows.jpg",
+        "imgUrl": "https://i.ibb.co/wckrqJy/Logitech-K380-Wireless-Multi-Device-Keyboard-for-Windows.jpg"
     },
     {
         "name": "Mini Bluetooth Keyboard and Touch-pad Mouse",
@@ -93,7 +93,7 @@
         "quantity": 15,
         "category": "60e15b7ce0f8253cc8fd6885",
         "description": "mini portable keyboard with touch pad\n",
-        "imgUrl": "https://i.ibb.co/YhY36YQ/Mini-Bluetooth-Keyboard-and-Touch-pad-Mouse.jpg",
+        "imgUrl": "https://i.ibb.co/YhY36YQ/Mini-Bluetooth-Keyboard-and-Touch-pad-Mouse.jpg"
     },
     {
         "name": "Walton Gaming WKG006WB",
@@ -101,7 +101,7 @@
         "quantity": 10,
         "category": "60e15b7ce0f8253cc8fd6885",
         "description": "Non RGB gaming keyboard cherry keys",
-        "imgUrl": "https://i.ibb.co/Yd3rwV8/Walton-Gaming-WKG006-WB.jpg",
+        "imgUrl": "https://i.ibb.co/Yd3rwV8/Walton-Gaming-WKG006-WB.jpg"
     },
     {
         "name": "Walton USB Keyboard Silk Printing",
@@ -109,7 +109,7 @@
         "quantity": 19,
         "category": "60e15b7ce0f8253cc8fd6885",
         "description": "Full silk printing keyboard brand walton",
-        "imgUrl": "https://i.ibb.co/rsRN7N1/Walton-USB-Keyboard-Silk-Printing.jpg",
+        "imgUrl": "https://i.ibb.co/rsRN7N1/Walton-USB-Keyboard-Silk-Printing.jpg"
     },
     {
         "name": "Walton WKG005WB Rose Gold",
@@ -117,158 +117,158 @@
         "quantity": 44,
         "category": "60e15b7ce0f8253cc8fd6885",
         "description": "walton keyboard model wkg005wb",
-        "imgUrl": "https://i.ibb.co/LQ7BxhP/Walton-WKG005-WB-Rose-Gold.jpg",
+        "imgUrl": "https://i.ibb.co/LQ7BxhP/Walton-WKG005-WB-Rose-Gold.jpg"
     },
     {
         "name": "avita magus 2-in-1 celeron n3350",
         "price": 225,
         "quantity": 45,
-        "category": "60e15aebe0f8253cc8fd6881",
+        "category": "60ead0da0a89c311dc48fb74",
         "description": "core i5 6gen, 8GB ram, 250GB SSD, 1TB HDD",
-        "imgUrl": "https://i.ibb.co/Ryw5HfG/avita-magus-2-in-1-celeron-n3350.png",
+        "imgUrl": "https://i.ibb.co/Ryw5HfG/avita-magus-2-in-1-celeron-n3350.png"
     },
     {
-        "name": "chuwi hi 10 X intel celeron processor.jpg",
+        "name": "chuwi hi 10 X intel celeron processor",
         "price": 263,
         "quantity": 18,
-        "category": "60e15aebe0f8253cc8fd6881",
+        "category": "60ead0da0a89c311dc48fb74",
         "description": "core i9, 16GB RAM, 1TB HDD",
-        "imgUrl": "https://i.ibb.co/GRHHYNT/chuwi-hi-10-X-intel-celeron-processor.jpg",
+        "imgUrl": "https://i.ibb.co/GRHHYNT/chuwi-hi-10-X-intel-celeron-processor.jpg"
     },
     {
         "name": "Dgel NoteBook Intel Quad  core 8gb",
         "price": 299,
         "quantity": 30,
-        "category": "60e15aebe0f8253cc8fd6881",
+        "category": "60ead0da0a89c311dc48fb74",
         "description": "Quad-core 8GB RAM, 1TB HDD, 14 inch",
-        "imgUrl": "https://i.ibb.co/RgyXzJ8/Dgel-Note-Book-Intel-Quad-core-8gb.jpg",
+        "imgUrl": "https://i.ibb.co/RgyXzJ8/Dgel-Note-Book-Intel-Quad-core-8gb.jpg"
     },
     {
         "name": "walton laptop tamarind metal body",
         "price": 350,
         "quantity": 45,
-        "category": "60e15aebe0f8253cc8fd6881",
+        "category": "60ead0da0a89c311dc48fb74",
         "description": "Walton Premier metal body 1TB SSD, Core-i9",
-        "imgUrl": "https://i.ibb.co/GQY32X2/walton-laptop-tamarind-metal-body.jpg",
+        "imgUrl": "https://i.ibb.co/GQY32X2/walton-laptop-tamarind-metal-body.jpg"
     },
     {
         "name": "Walton prelude n50000 laptop",
         "price": 280,
         "quantity": 19,
-        "category": "60e15aebe0f8253cc8fd6881",
+        "category": "60ead0da0a89c311dc48fb74",
         "description": "core i5, 6th gen, 1TB HDD, 8GB RAM",
-        "imgUrl": "https://i.ibb.co/Hh309n7/Walton-prelude-n50000-laptop.jpg",
+        "imgUrl": "https://i.ibb.co/Hh309n7/Walton-prelude-n50000-laptop.jpg"
     },
     {
         "name": "micromax q4261 black",
         "price": 45,
         "quantity": 50,
-        "category": "60e15adee0f8253cc8fd687d",
+        "category": "60ead0c90a89c311dc48fb70",
         "description": "Button phone, dual sim,  fm radio, audio, video",
-        "imgUrl": "https://i.ibb.co/MhD5NpX/micromax-q4261-black.jpg",
+        "imgUrl": "https://i.ibb.co/MhD5NpX/micromax-q4261-black.jpg"
     },
     {
-        "name": "Micromax x920 Feature Phone.jpg",
+        "name": "Micromax x920 Feature Phone",
         "price": 45,
         "quantity": 45,
-        "category": "60e15adee0f8253cc8fd687d",
+        "category": "60ead0c90a89c311dc48fb70",
         "description": "brand: micromax, button phon, dual sim, audio, video",
-        "imgUrl": "https://i.ibb.co/f06WHMj/Micromax-x920-Feature-Phone.jpg",
+        "imgUrl": "https://i.ibb.co/f06WHMj/Micromax-x920-Feature-Phone.jpg"
     },
     {
         "name": "oppo f19  6gb",
         "price": 220,
         "quantity": 10,
-        "category": "60e15adee0f8253cc8fd687d",
+        "category": "60ead0c90a89c311dc48fb70",
         "description": "6inch display 6GB RAM 64GB ROM",
-        "imgUrl": "https://i.ibb.co/YcYcR0S/oppo-f19-6gb.jpg",
+        "imgUrl": "https://i.ibb.co/YcYcR0S/oppo-f19-6gb.jpg"
     },
     {
         "name": "Techno camon 16 premier",
         "price": 200,
         "quantity": 45,
-        "category": "60e15adee0f8253cc8fd687d",
+        "category": "60ead0c90a89c311dc48fb70",
         "description": "6inch Display, 6GB RAM, 16GB ROM",
-        "imgUrl": "https://i.ibb.co/D52qK90/Techno-camon-16-premier.jpg",
+        "imgUrl": "https://i.ibb.co/D52qK90/Techno-camon-16-premier.jpg"
     },
     {
         "name": "Techno spark 6 air",
         "price": 208,
         "quantity": 16,
-        "category": "60e15adee0f8253cc8fd687d",
+        "category": "60ead0c90a89c311dc48fb70",
         "description": "6.2inch display, 16GB RAM, 128GB ROM",
-        "imgUrl": "https://i.ibb.co/S67Dx33/techno-spark-6-air.jpg",
+        "imgUrl": "https://i.ibb.co/S67Dx33/techno-spark-6-air.jpg"
     },
     {
         "name": "walton olvio l50",
         "price": 55,
         "quantity": 18,
-        "category": "60e15adee0f8253cc8fd687d",
+        "category": "60ead0c90a89c311dc48fb70",
         "description": "Button Phone, dual sim, audio, video, multiple colors",
-        "imgUrl": "https://i.ibb.co/vBpz4q3/walton-olvio-l50.jpg",
+        "imgUrl": "https://i.ibb.co/vBpz4q3/walton-olvio-l50.jpg"
     },
     {
         "name": "Havit RGB blacklit gamming mouse - hv-ms1003",
         "price": 45,
         "quantity": 65,
-        "category": "60e15b71e0f8253cc8fd6883",
+        "category": "60ead0cd0a89c311dc48fb72",
         "description": "5 button gamming mouse, high quality, habit brand",
-        "imgUrl": "https://i.ibb.co/z6bYzDJ/Havit-RGB-blacklit-gamming-mouse-hv-ms1003.jpg",
+        "imgUrl": "https://i.ibb.co/z6bYzDJ/Havit-RGB-blacklit-gamming-mouse-hv-ms1003.jpg"
     },
     {
         "name": "Logitech g402 hyperion fury",
         "price": 65,
         "quantity": 33,
-        "category": "60e15b71e0f8253cc8fd6883",
+        "category": "60ead0cd0a89c311dc48fb72",
         "description": "Gamming mouse RGB logitech brand 5 buttons",
-        "imgUrl": "https://i.ibb.co/44Gw5Q0/Logitech-g402-hyperion-fury.jpg",
+        "imgUrl": "https://i.ibb.co/44Gw5Q0/Logitech-g402-hyperion-fury.jpg"
     },
     {
         "name": "Logitech M170 Wireless Mouse, 2.4 GHz",
         "price": 35,
         "quantity": 15,
-        "category": "60e15b71e0f8253cc8fd6883",
+        "category": "60ead0cd0a89c311dc48fb72",
         "description": "Wireless mouse, standard logitech brand 2.5GHz",
-        "imgUrl": "https://i.ibb.co/YPpZnk3/Logitech-M170-Wireless-Mouse-2-4-GHz.jpg",
+        "imgUrl": "https://i.ibb.co/YPpZnk3/Logitech-M170-Wireless-Mouse-2-4-GHz.jpg"
     },
     {
         "name": "logitech mouse m90",
         "price": 16,
         "quantity": 12,
-        "category": "60e15b71e0f8253cc8fd6883",
+        "category": "60ead0cd0a89c311dc48fb72",
         "description": "Logitech standard wired mouse for office use",
-        "imgUrl": "https://i.ibb.co/FKpRnFs/logitech-mouse-m90.jpg",
+        "imgUrl": "https://i.ibb.co/FKpRnFs/logitech-mouse-m90.jpg"
     },
     {
         "name": "Micropack wirelsess mouse mp-716w",
         "price": 36,
         "quantity": 42,
-        "category": "60e15b71e0f8253cc8fd6883",
+        "category": "60ead0cd0a89c311dc48fb72",
         "description": "Micropack wireless standard mouse for office/home use",
-        "imgUrl": "https://i.ibb.co/v1DH5kk/Micropack-wirelsess-mouse-mp-716w.jpg",
+        "imgUrl": "https://i.ibb.co/v1DH5kk/Micropack-wirelsess-mouse-mp-716w.jpg"
     },
     {
         "name": "Rechargeable Mouse Dual Mode Rechargeable Wireless Mouse",
         "price": 35,
         "quantity": 12,
-        "category": "60e15b71e0f8253cc8fd6883",
+        "category": "60ead0cd0a89c311dc48fb72",
         "description": "Rechargeable dual-mode mouse thin mouse",
-        "imgUrl": "https://i.ibb.co/PhbG1h1/Rechargeable-Mouse-Dual-Mode-Rechargeable-Wireless-Mouse.jpg",
+        "imgUrl": "https://i.ibb.co/PhbG1h1/Rechargeable-Mouse-Dual-Mode-Rechargeable-Wireless-Mouse.jpg"
     },
     {
         "name": "walton wms025wn optical wired mouse",
         "price": 25,
         "quantity": 55,
-        "category": "60e15b71e0f8253cc8fd6883",
+        "category": "60ead0cd0a89c311dc48fb72",
         "description": "Walton optical wired mouse comfortable for office use",
-        "imgUrl": "https://i.ibb.co/sVMvF7p/walton-wms025wn-optical-wired-mouse.jpg",
+        "imgUrl": "https://i.ibb.co/sVMvF7p/walton-wms025wn-optical-wired-mouse.jpg"
     },
     {
         "name": "The Kite Runner Paperback ww",
         "price": 15,
         "quantity": 20,
-        "category": "60e15b84e0f8253cc8fd6887",
+        "category": "60ead0ba0a89c311dc48fb6a",
         "description": "hard copy of newspaper print",
-        "imgUrl": "https://i.ibb.co/nRhDKfT/The-Kite-Runner-Paperback.jpg",
+        "imgUrl": "https://i.ibb.co/nRhDKfT/The-Kite-Runner-Paperback.jpg"
     }
 ]

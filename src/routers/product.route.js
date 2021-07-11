@@ -7,6 +7,7 @@ const isAdmin = require('../middleware/isAdmin');
 
 //Add new Product
 router.post('/new', isAdmin, async (req,res)=> {
+   
     const product = new Product(req.body);
     try {
         await product.save();
@@ -29,16 +30,11 @@ router.patch('/update/:id',async (req,res)=>{
 })
 
 //Get all Products
-router.get('/',async (req,res)=>{
-    try {
-        const products = await Product.find();
-        if(!products) {
-            res.send("No product is uploaded.")
-        }
-        res.send(products)
-    } catch (error) {
-        res.send(error)
-    }
+router.get('/', (req,res)=>{
+    Product.find({}).populate('category', 'name').exec((err, docs) => {
+        if(err) return res.send(err);
+        res.send(docs)
+    })
 })
 
 //Get Products By Category
