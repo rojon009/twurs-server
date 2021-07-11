@@ -1,14 +1,14 @@
 {
-  "name": "server",
+  "name": "twurs-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "twurs-tech-shop backend server",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rojon Ali",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
