@@ -41,6 +41,20 @@ router.get('/',async (req,res)=>{
     }
 })
 
+//Get Products By Category
+router.get('/category/:category',async (req,res)=>{
+    const {category} = req.params;
+    try {
+        const products = await Product.find({category});
+        if(!products) {
+            res.send("No product is uploaded.")
+        }
+        res.send(products)
+    } catch (error) {
+        res.send(error)
+    }
+})
+
 //Get Product By ID
 router.get('/:id', async (req,res)=>{
     const {id} = req.params;
@@ -66,19 +80,7 @@ router.delete('/:id', isAdmin, async (req,res)=>{
     }
 })
 
-//Get Products By Category
-router.get('/category/:category',async (req,res)=>{
-    const {category} = req.params;
-    try {
-        const products = await Product.find({category});
-        if(!products) {
-            res.send("No product is uploaded.")
-        }
-        res.send(products)
-    } catch (error) {
-        res.send(error)
-    }
-})
+
 
 
 module.exports = router;

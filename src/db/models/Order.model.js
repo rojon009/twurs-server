@@ -1,25 +1,19 @@
 const mongoose = require("mongoose");
-const Product = require("./Product.model");
 
 const orderSchema = new mongoose.Schema({
-    userEmail: {
-        type: String,
-        require: true,
+  userEmail: {
+    type: String,
+    require: true,
+  },
+  products: [
+    {
+      product: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Product",
+      },
+      quantity: Number,
     },
-    productId: {
-        type: mongoose.Types.ObjectId,
-        required: true,
-    },
-    quantity: {
-        type: Number,
-        required: true,
-    },
-});
-
-orderSchema.pre("save", async function (next) {
-    const order = this;
-    console.log(order)
-    next();
+  ],
 });
 
 const Order = mongoose.model("Order", orderSchema);

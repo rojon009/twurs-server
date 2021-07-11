@@ -7,8 +7,11 @@ const adminRoute = require('./routers/admin.route');
 const productRoute = require('./routers/product.route');
 const categoryRoute = require('./routers/category.route');
 const orderRoute = require('./routers/order.route');
+const cors = require('cors');
+const Product = require('./db/models/Product.model');
 
 app.use(express.json())
+app.use(cors())
 
 app.use('/users', userRoute);
 app.use('/admins', adminRoute);
