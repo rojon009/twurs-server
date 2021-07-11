@@ -17,7 +17,7 @@ const adminSchema = new mongoose.Schema({
         unique: true,
         lowercase: true,
         validate(email) {
-            if(!validator.isEmail(email)) {
+            if (!validator.isEmail(email)) {
                 throw new Error('Email must be a valid email');
             }
         }
@@ -26,14 +26,10 @@ const adminSchema = new mongoose.Schema({
         type: String,
         trim: true,
         required: true,
-        // validate(password) {
-        //     if(!validator.isStrongPassword(password)) {
-        //         throw new Error('Password must be Strong')
-        //     }
-        // }
+        minLength: 6
     },
     tokens: [{
-        token:{
+        token: {
             type: String,
             required: true
         }
@@ -42,11 +38,12 @@ const adminSchema = new mongoose.Schema({
     timestamps: true
 });
 
+// Generate auth token for admin
 adminSchema.methods.generateAuthToken = async function () {
     const admin = this;
 
-    const token = jwt.sign({_id: admin._id.toString()}, 'twurshiringtask');
-    admin.tokens = admin.tokens.concat({token});
+    const token = jwt.sign({ _id: admin._id.toString() }, 'twurshiringtask');
+    admin.tokens = admin.tokens.concat({ token });
     await admin.save();
     return token;
 }
@@ -60,15 +57,16 @@ adminSchema.methods.toJSON = function () {
     return adminObject;
 }
 
+// Find Admin By email and password
 adminSchema.statics.findByCredentials = async (email, password) => {
-    const admin = await Admin.findOne({email});
-    if(!admin) {
+    const admin = await Admin.findOne({ email });
+    if (!admin) {
         throw new Error('Email or password not matched');
     }
 
     const isMatch = await bcrypt.compare(password, admin.password);
 
-    if(!isMatch) {
+    if (!isMatch) {
         throw new Error('Email or password not matched');
     }
 
@@ -79,7 +77,7 @@ adminSchema.statics.findByCredentials = async (email, password) => {
 adminSchema.pre('save', async function (next) {
     const admin = this;
 
-    if(admin.isModified('password')) {
+    if (admin.isModified('password')) {
         admin.password = await bcrypt.hash(admin.password, 8);
     }
 
@@ -88,5 +86,5 @@ adminSchema.pre('save', async function (next) {
 
 
 
-const Admin = new mongoose.model('Admin',adminSchema);
-module.exports =  Admin
+const Admin = new mongoose.model('Admin', adminSchema);
+module.exports = Admin

@@ -12,13 +12,13 @@ const categorySchema = new mongoose.Schema({
 categorySchema.set('toObject', { virtuals: true });
 categorySchema.set('toJSON', { virtuals: true });
 
+// Setting virtual property for search products based on category
 categorySchema.virtual("products", {
   ref: "Product",
   localField: "_id",
   foreignField: "category",
 });
 
-categorySchema.set()
 
 const Category = mongoose.model("Category", categorySchema);
 

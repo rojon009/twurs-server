@@ -3,7 +3,7 @@ const router = express.Router();
 const Category = require('../db/models/Category.model')
 
 //Create Category
-router.post('/', (req,res)=>{
+router.post('/', (req, res) => {
     const category = new Category(req.body);
     try {
         category.save();
@@ -14,7 +14,7 @@ router.post('/', (req,res)=>{
 })
 
 //Get All Categories
-router.get('/', async (req,res)=>{
+router.get('/', async (req, res) => {
     try {
         const categories = await Category.find({});
         res.send(categories)
@@ -24,10 +24,11 @@ router.get('/', async (req,res)=>{
 })
 
 //Get Single Category
-router.get('/:category', (req,res) => {
-    const {category} = req.params;
-    Category.findOne({name: category}).populate('products').exec(function(error, doc) {
-        if(error) return res.send(error)
+router.get('/:categoryName', (req, res) => {
+    const { categoryName } = req.params;
+
+    Category.findOne({ name: categoryName }).populate('products').exec(function (error, doc) {
+        if (error) return res.send(error)
         res.send(doc)
     });
 })

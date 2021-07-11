@@ -10,7 +10,7 @@ const productSchema = new mongoose.Schema({
         type: Number,
         required: true,
         validate(value) {
-            if(value < 0) {
+            if (value < 0) {
                 throw new Error('Product must have quantity');
             }
         }
@@ -19,7 +19,7 @@ const productSchema = new mongoose.Schema({
         type: Number,
         required: true,
         validate(value) {
-            if(value < 0) {
+            if (value < 0) {
                 throw new Error('Product must have Price');
             }
         }

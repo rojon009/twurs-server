@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
         unique: true,
         lowercase: true,
         validate(email) {
-            if(!validator.isEmail(email)) {
+            if (!validator.isEmail(email)) {
                 throw new Error('Email must be a valid email');
             }
         }
@@ -25,15 +25,10 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         trim: true,
-        required: true,
-        // validate(password) {
-        //     if(!validator.isStrongPassword(password)) {
-        //         throw new Error('Password must be Strong')
-        //     }
-        // }
+        required: true
     },
     tokens: [{
-        token:{
+        token: {
             type: String,
             required: true
         }
@@ -45,8 +40,8 @@ const userSchema = new mongoose.Schema({
 userSchema.methods.generateAuthToken = async function () {
     const user = this;
 
-    const token = jwt.sign({_id: user._id.toString()}, 'twurshiringtask');
-    user.tokens = user.tokens.concat({token});
+    const token = jwt.sign({ _id: user._id.toString() }, 'twurshiringtask');
+    user.tokens = user.tokens.concat({ token });
     await user.save();
     return token;
 }
@@ -61,14 +56,14 @@ userSchema.methods.toJSON = function () {
 }
 
 userSchema.statics.findByCredentials = async (email, password) => {
-    const user = await User.findOne({email});
-    if(!user) {
+    const user = await User.findOne({ email });
+    if (!user) {
         throw new Error('Email or password not matched');
     }
 
     const isMatch = await bcrypt.compare(password, user.password);
 
-    if(!isMatch) {
+    if (!isMatch) {
         throw new Error('Email or password not matched');
     }
 
@@ -79,7 +74,7 @@ userSchema.statics.findByCredentials = async (email, password) => {
 userSchema.pre('save', async function (next) {
     const user = this;
 
-    if(user.isModified('password')) {
+    if (user.isModified('password')) {
         user.password = await bcrypt.hash(user.password, 8);
     }
 
@@ -88,5 +83,5 @@ userSchema.pre('save', async function (next) {
 
 
 
-const User = new mongoose.model('User',userSchema);
+const User = new mongoose.model('User', userSchema);
 module.exports = User

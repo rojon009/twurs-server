@@ -6,8 +6,8 @@ const isAdmin = require('../middleware/isAdmin');
 
 
 //Add new Product
-router.post('/new', isAdmin, async (req,res)=> {
-   
+router.post('/new', isAdmin, async (req, res) => {
+
     const product = new Product(req.body);
     try {
         await product.save();
@@ -18,10 +18,10 @@ router.post('/new', isAdmin, async (req,res)=> {
 })
 
 //Update Product Quantity
-router.patch('/update/:id',async (req,res)=>{
-    const {id} = req.params;
+router.patch('/update/:id', async (req, res) => {
+    const { id } = req.params;
     try {
-        const product = await Product.updateOne({_id: id}, req.body)
+        const product = await Product.updateOne({ _id: id }, req.body)
         res.send(product)
     } catch (error) {
         res.send(error)
@@ -30,19 +30,19 @@ router.patch('/update/:id',async (req,res)=>{
 })
 
 //Get all Products
-router.get('/', (req,res)=>{
+router.get('/', (req, res) => {
     Product.find({}).populate('category', 'name').exec((err, docs) => {
-        if(err) return res.send(err);
+        if (err) return res.send(err);
         res.send(docs)
     })
 })
 
 //Get Products By Category
-router.get('/category/:category',async (req,res)=>{
-    const {category} = req.params;
+router.get('/category/:category', async (req, res) => {
+    const { category } = req.params;
     try {
-        const products = await Product.find({category});
-        if(!products) {
+        const products = await Product.find({ category });
+        if (!products) {
             res.send("No product is uploaded.")
         }
         res.send(products)
@@ -52,12 +52,12 @@ router.get('/category/:category',async (req,res)=>{
 })
 
 //Get Product By ID
-router.get('/:id', async (req,res)=>{
-    const {id} = req.params;
+router.get('/:id', async (req, res) => {
+    const { id } = req.params;
 
     try {
         const product = await Product.findById(id);
-        if(!product) return res.status(404).send("This Product is Not found")
+        if (!product) return res.status(404).send("This Product is Not found")
         res.send(product)
     } catch (error) {
         res.send(error)
@@ -65,8 +65,8 @@ router.get('/:id', async (req,res)=>{
 })
 
 //Delete Product By ID
-router.delete('/:id', isAdmin, async (req,res)=>{
-    const {id} = req.params;
+router.delete('/:id', isAdmin, async (req, res) => {
+    const { id } = req.params;
     try {
         const product = await Product.findByIdAndDelete(id);
         if (!product) return res.status(404).send("This Product is not found");
