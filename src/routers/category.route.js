@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const Category = require('../db/models/Category.model')
+const Category = require('../db/models/Category.model');
+const isAdmin = require('../middleware/isAdmin');
 
 //Create Category
-router.post('/', (req, res) => {
+router.post('/', isAdmin, (req, res) => {
     const category = new Category(req.body);
     try {
         category.save();
