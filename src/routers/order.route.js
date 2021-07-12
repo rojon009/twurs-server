@@ -5,7 +5,7 @@ const isAdmin = require('../middleware/isAdmin');
 const router = express.Router();
 
 router.get('/me', auth, (req, res) => {
-    Order.findOne(req.body).populate({
+    Order.findOne({userEmail: req.user.email}).populate({
         path: 'products.product',
         populate: {
             path: 'category'
