@@ -17,11 +17,22 @@ router.get('/me', auth, (req, res) => {
 })
 
 //Insert order
-router.post('/', auth, (req, res) => {
-    Order.insertMany(req.body, function (error, docs) {
-        if (error) return res.send({ err: error })
-        res.send(docs)
-    });
+router.post('/', auth, async (req, res) => {
+    try {
+        const order = await Order.findOne({userEmail: req.body.userEmail});
+        if(order) {
+            Order.updateOne({userEmail: req.body.userEmail},{products: [...order.products,...req.body.products]}, (err, docs)=> {
+                if(err) return res.send(err)
+                res.send(docs)
+            })
+        } else {
+            const order = new Order(req.body)
+            await order.save();
+            res.send(order)
+        }
+    } catch (error) {
+        res.send(error)
+    }
 })
 
 router.get('/', isAdmin, (req, res) => {
